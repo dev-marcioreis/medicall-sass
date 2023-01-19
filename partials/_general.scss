@@ -1,0 +1,52 @@
+.container {
+    width: $cont-large;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+section {
+    margin-block-start: 6rem;
+
+    & > h2 {
+        text-align: center;
+    }
+    & > p {
+        text-align: center;
+        width: 42%;
+        margin: .6rem auto 2.5rem;
+    }
+}
+.btn {
+    @include button;
+}
+.btn-primary {
+    @include button($white, $primary-color);
+}
+
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    .container {
+        width: $cont-medium;
+    }
+    section {
+        & > p {
+            width: 55%;
+        }
+    }
+}
+
+
+/*==========Media Query 600px==========*/
+@media (max-width: 600px) {
+    section {
+        & > p {
+            width: $cont-medium;
+        }
+    }
+}
