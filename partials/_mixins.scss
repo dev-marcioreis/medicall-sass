@@ -3,7 +3,7 @@
     width: fit-content;
     padding: .75rem 1rem;
     border-radius: .4rem;
-    background: $backgroundColor;
+    background: $red-color;
     color: $textColor;
     cursor: pointer;
     transition: all 400ms ease;
@@ -12,5 +12,14 @@
         background: lighten($backgroundColor, 10%);
         box-shadow: 0 1rem 1.6rem rgba($black, 0.15);
         transform: scale(1.02);
+    }
+}
+
+@mixin  gradient {
+    background: linear-gradient(135deg, $primary-color, $primary-color-vari);
+    color: $white;
+
+    h1, h1, h3, h4, h5 {
+        color: $white;
     }
 }
