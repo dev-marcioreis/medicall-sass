@@ -1,0 +1,41 @@
+#services {
+    margin-block-end: 1rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 
+        2rem;
+
+        article {
+            display: flex;
+            gap: 1.5rem;
+            box-shadow: $shadow-1;
+            background: $white;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            height: fit-content;
+            transition: all 300ms ease;
+
+            &:hover {
+                margin-top: -0.5rem;
+                box-shadow: $shadow;
+            }
+
+            i {
+                font-size: 1.7rem;
+                color: $secondary-color;
+            }
+
+            div {
+                h4 {
+                   color: $secondary-color;
+                   margin-block-end: 1rem; 
+                }
+                small {
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
