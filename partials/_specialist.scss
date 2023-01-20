@@ -76,6 +76,7 @@
 
         .container {
             grid-template-columns: 1fr 1fr;
+            width: 60%;
         }
     }
 }
@@ -87,6 +88,7 @@
 
         .container {
             grid-template-columns:1fr;
+            width: 85%;
         }
     }
 }
