@@ -8,6 +8,10 @@ nav {
     box-shadow: 0 1rem 1rem rgba($black, 0.1);
     @include gradient;
 
+    &.window-scrolling {
+        background: $primary-color;
+    }
+
     .container {
         display: flex;
         align-items: center;
@@ -41,6 +45,7 @@ nav {
 /*==========Media Query 1024px==========*/
 @media (max-width: 1024px) {
     nav {
+        
         .container {
             button {
                 display: inline-block;

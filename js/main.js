@@ -24,3 +24,7 @@ if(window.innerWidth < 1024) {
     })
 }
 
+
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('window-scrolling', window.scrollY > 0)
+})
