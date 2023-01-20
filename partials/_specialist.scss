@@ -1,0 +1,70 @@
+#specialists {
+    margin-block-end: 2rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        width: 68%;
+
+        article {
+            position: relative;
+            box-shadow: $shadow-1;
+            background: $white;
+            border-radius: 1rem;
+            transition: all 700ms ease;
+
+            &:hover {
+                box-shadow: none;
+
+                .specialist__image::before {
+                    bottom: 0;
+                }
+            }
+
+            .specialist__image {
+                position: relative;
+                height: 20rem;
+                border-radius: 1rem 1rem 5rem 5rem;
+                background: $primary-color-vari;
+                overflow: hidden;
+                box-shadow: $shadow-1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    bottom: -100%;
+                    background: $primary-color-transp;
+                    transition: all 1s ease;
+                }
+            }
+
+            .specialist__details {
+                text-align: center;
+                margin: 1rem 0;
+            }
+
+            .specialist__socials {
+                position: absolute;
+                top: 1rem;
+                right: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                a {
+                    font-size: 1.3rem;
+                    color: $white;
+                    transition: all 400ms ease;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
