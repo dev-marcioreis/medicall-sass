@@ -37,6 +37,17 @@ section {
     @include button($white, $primary-color);
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: $white;
+}
+::-webkit-scrollbar-thumb {
+    @include gradient;
+}
+
+
 
 /*==========Media Query 1024px==========*/
 @media (max-width: 1024px) {
