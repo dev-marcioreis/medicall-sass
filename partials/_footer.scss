@@ -2,7 +2,7 @@ footer {
     @include gradient;
     color: $light-color;
     margin-block-start: 6rem;
-    padding: 4rem;
+    padding: 4rem 0;
 
     .container {
         display: grid;
@@ -39,8 +39,8 @@ footer {
             }
 
             .footer__socials {
-                font-size: 1.1rem;
-                gap: 1rem;
+                font-size: 1.4rem;
+                gap: 1.5rem;
 
                 a {
                     display: flex;
@@ -64,4 +64,39 @@ footer {
         font-size: 1rem;
         border-top: 1px solid $light-color;
     }
+}
+
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    footer {
+
+        .container {
+            gap: 2.5rem;
+        }
+    }
+    
+}
+
+
+/*==========Media Query 600px==========*/
+@media (max-width: 600px) {
+    footer {
+
+        .container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        article {
+            & > div {
+                justify-content: center;
+            }
+        }
+    }
+
+    .footer__socials {
+        margin: 0 auto;
+    }
+    
 }
