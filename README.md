@@ -1,4 +1,5 @@
 # Medicall (SASS)
 Iniciando novo projeto em HTML, SASS e JavaScript.<br>
-Link de acesso: https://dev-marcioreis.github.io/medicall-sass/
-![image](https://user-images.githubusercontent.com/122680054/213559780-8a57071d-7374-4edf-bb24-a64276ba2576.png)
+Link de acesso: https://dev-marcioreis.github.io/medicall-sass/ <br>
+Desktop
+![image](https://user-images.githubusercontent.com/122680054/213713975-84d632e3-7505-4856-b2cb-9479c4813c37.png)
