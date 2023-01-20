@@ -7,5 +7,5 @@ Desktop
 Tablet
 ![image](https://user-images.githubusercontent.com/122680054/213714142-73936405-9acc-45c1-9f5e-b0d15d77aabc.png)
 
-Celular
+Celular <br>
 ![image](https://user-images.githubusercontent.com/122680054/213714282-0add5bd3-c8aa-4a22-a6db-124ba5d02ea6.png)
