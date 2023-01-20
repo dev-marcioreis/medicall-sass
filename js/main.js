@@ -8,8 +8,19 @@ openBtm.addEventListener('click', () => {
     closeBtn.style.display = 'inline-block'
 })
 
-closeBtn.addEventListener('click', () => {
+const closeNav = () => {
     navbar.style.display = 'none'
     closeBtn.style.display = 'none'
     openBtm.style.display = 'inline-block'
-})
+}
+
+closeBtn.addEventListener('click', closeNav)
+
+if(window.innerWidth < 1024) {
+    document.querySelectorAll('#nav__items li a').forEach(navbar => {
+        navbar.addEventListener('click', () => {
+            closeNav()
+        })
+    })
+}
+
