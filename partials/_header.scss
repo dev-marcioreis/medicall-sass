@@ -58,7 +58,6 @@ header {
         }
 
         .container {
-            margin-block-start: 1rem;
             gap: 1%;
 
             .header__content {
@@ -85,6 +84,7 @@ header {
         }
 
         .container {
+            margin-block-start: 1.5rem;
             text-align: center;
             grid-template-columns: 1fr;
 
