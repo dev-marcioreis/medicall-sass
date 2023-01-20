@@ -39,3 +39,43 @@
         }
     }
 }
+
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    #services {
+
+        .container {
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        article {
+            padding: 1.2rem;
+            gap: .8rem;
+        }
+
+        &:hover {
+            margin: 0;
+        }
+    }
+}
+
+
+/*==========Media Query 600px==========*/
+@media (max-width: 600px) {
+    #services {
+
+        .container {
+            grid-template-columns: 1fr;
+
+            article {
+                div {
+                    h4 {
+                        margin-block-end: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
