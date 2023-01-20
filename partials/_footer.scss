@@ -1,0 +1,67 @@
+footer {
+    @include gradient;
+    color: $light-color;
+    margin-block-start: 6rem;
+    padding: 4rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+        font-size: .9rem;
+
+        a {
+            color: $light-color;
+            transition: all 400ms ease;
+
+            &:hover {
+                color: $white;
+            }
+
+            & > h3 {
+                text-transform: uppercase;
+            }
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                gap: .6rem;
+            }
+
+            & > h3 {
+                color: $white;
+            }
+
+            .footer__socials {
+                font-size: 1.1rem;
+                gap: 1rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+                    color: $white;
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        margin: 4rem 0 1rem;
+        padding: 1.5rem 0;
+        font-size: 1rem;
+        border-top: 1px solid $light-color;
+    }
+}
