@@ -13,3 +13,9 @@ closeBtn.addEventListener('click', () => {
     closeBtn.style.display = 'none'
     openBtm.style.display = 'inline-block'
 })
+
+navbar.addEventListener('click', () => {
+    navbar.style.display = 'none'
+    closeBtn.style.display = 'none'
+    openBtm.style.display = 'block'
+})
