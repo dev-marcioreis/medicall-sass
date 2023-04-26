@@ -6,7 +6,7 @@ Este projeto é um exemplo de clinica médica ou também pode ser uma landing pa
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 SASS
 
 ## ✒️ Autor
